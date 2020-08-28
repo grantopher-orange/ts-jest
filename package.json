@@ -64,7 +64,7 @@
     "mkdirp": "0.x",
     "resolve": "1.x",
     "semver": "^5.5",
-    "yargs-parser": "10.x"
+    "yargs-parser": "19.x"
   },
   "peerDependencies": {
     "jest": ">=24 <25"
