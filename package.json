@@ -78,7 +78,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "7.x",
-    "@commitlint/config-conventional": "7.x",
+    "@commitlint/config-conventional": "12.x",
     "@types/babel__core": "7.x",
     "@types/buffer-from": "latest",
     "@types/cross-spawn": "latest",
