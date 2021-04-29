@@ -1,0 +1,57 @@
+version: 2
+registries:
+  npm-registry-hdqc-myget-org-f-quotecenter-npm-npm:
+    type: npm-registry
+    url: https://hdqc.myget.org/F/quotecenter-npm/npm/
+    token: "${{secrets.NPM_REGISTRY_HDQC_MYGET_ORG_F_QUOTECENTER_NPM_NPM_TOKEN}}"
+
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@types/fs-extra"
+    versions:
+    - 9.0.10
+    - 9.0.6
+    - 9.0.7
+    - 9.0.8
+    - 9.0.9
+  - dependency-name: y18n
+    versions:
+    - 4.0.1
+  - dependency-name: "@types/jest"
+    versions:
+    - 26.0.20
+    - 26.0.21
+    - 26.0.22
+  - dependency-name: "@commitlint/config-conventional"
+    versions:
+    - 11.0.0
+    - 12.0.0
+    - 12.0.1
+  - dependency-name: "@types/yargs"
+    versions:
+    - 16.0.0
+  - dependency-name: js-yaml
+    versions:
+    - 4.0.0
+  - dependency-name: "@types/js-yaml"
+    versions:
+    - 4.0.0
+  - dependency-name: resolve
+    versions:
+    - 1.19.0
+  - dependency-name: "@types/semver"
+    versions:
+    - 7.3.4
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
+  registries:
+  - npm-registry-hdqc-myget-org-f-quotecenter-npm-npm
